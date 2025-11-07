@@ -1,12 +1,13 @@
 {
   "name": "good-vibes",
   "version": "1.0.0",
-  "description": "Markdown to PDF converter with Git integration",
+  "description": "Markdown to PDF converter",
   "main": "src/converter.js",
   "scripts": {
-    "setup": "echo 'Setup complete'",
-    "build": "echo 'Building templates'",
-    "convert": "echo 'Converting...'",
+    "init": "node scripts/setup.js",
+    "convert": "node src/converter.js",
+    "batch": "node src/batch.js",
+    "clean": "rm -rf dist",
     "test": "echo 'Tests passed'"
   },
   "license": "MIT"
